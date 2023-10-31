@@ -1,3 +1,5 @@
+const output = document.getElementById('output');
+
 function Burger({
     // default values
     bun = '',
@@ -71,3 +73,6 @@ const getRandomBurger = Burger.randomize();
 
 // log the description
 console.log(getRandomBurger.desc());
+
+// output the description (extra functionality)
+output.textContent = getRandomBurger.desc();
